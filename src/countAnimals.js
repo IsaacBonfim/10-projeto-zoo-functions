@@ -51,6 +51,6 @@ function countAnimals(animal = {}) {
   return animais;
 }
 
-console.log(countAnimals({ specie: 'giraffes' }));
+console.log(countAnimals({ specie: 'giraffes', sex: 'female' }));
 
 module.exports = countAnimals;
