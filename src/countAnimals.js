@@ -15,13 +15,7 @@ function undAnimal() {
 
 function verificaAnimal(specie) {
   const { species } = data;
-  const result = species.filter((especie) => {
-    let retorno = '';
-    if (especie.name === specie) {
-      retorno = especie;
-    }
-    return retorno;
-  });
+  const result = species.filter((especie) => especie.name === specie);
 
   return result;
 }
@@ -51,6 +45,6 @@ function countAnimals(animal = {}) {
   return animais;
 }
 
-console.log(countAnimals({ specie: 'giraffes', sex: 'female' }));
+console.log(countAnimals({ specie: 'giraffes' }));
 
 module.exports = countAnimals;

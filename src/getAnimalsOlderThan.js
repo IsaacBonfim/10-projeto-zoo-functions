@@ -11,7 +11,7 @@ function getAnimalsOlderThan(animal, age = 0) {
 
     return retorno; // retornando o objeto referente a especie encontrada
   }).every((specie) => {
-    const { residents } = specie; // separando os residentes da especie retornada pelo filter
+    const { residents } = specie; // separando os residentes da especie retornada pelo filter.
 
     const retorno = residents.every((resident) => (resident.age >= age)); // comparando a idade dos residentes com a idade passada como argumento
 
